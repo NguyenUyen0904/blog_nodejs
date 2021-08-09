@@ -6,6 +6,7 @@ const port = 3000
 //HTTP logger
 const morgan = require('morgan');
 const { extname } = require('path');
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(morgan('combined'))
 //template engine 
 app.engine('hbs', handlebars(

@@ -4,6 +4,8 @@
   "description": "blog ",
   "main": "src/index.js",
   "scripts": {
+
+    "watch":"node-sass --watch D:/Nodejs/blog/src/resources/scss/ --output D:/Nodejs/blog/src/public/css/",
     "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +18,7 @@
     "learn",
     "f8"
   ],
+
   "author": "uyen",
   "license": "ISC",
   "bugs": {
@@ -28,6 +31,7 @@
   },
   "devDependencies": {
     "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   }
 }
